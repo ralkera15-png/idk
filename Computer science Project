@@ -1,0 +1,126 @@
+print("===================================")
+print("     MICHAEL JACKSON TRIVIA QUIZ")
+print("===================================")
+
+name = input("What is your name? ")
+
+print("\nWelcome, " + name + "!")
+print("Let's see how well you know Michael Jackson!")
+print("Enter the number of your answer for each question.\n")
+
+score = 0
+total_questions = 6
+
+# Question 1
+print("1. Which Michael Jackson album is the best-selling album of all time?")
+print("1. Bad")
+print("2. Thriller")
+print("3. Dangerous")
+print("4. Off the Wall")
+
+answer = input("Your answer: ")
+
+if answer == "2":
+    print("Correct! Thriller is the answer.\n")
+    score += 1
+else:
+    print("Incorrect. The correct answer is Thriller.\n")
+
+
+# Question 2
+print("2. Which Michael Jackson song is famous for its iconic horror-themed music video?")
+print("1. Beat It")
+print("2. Billie Jean")
+print("3. Thriller")
+print("4. Smooth Criminal")
+
+answer = input("Your answer: ")
+
+if answer == "3":
+    print("Correct! Thriller is the answer.\n")
+    score += 1
+else:
+    print("Incorrect. The correct answer is Thriller.\n")
+
+
+# Question 3
+print("3. Which Michael Jackson song focuses heavily on environmental issues?")
+print("1. Earth Song")
+print("2. Rock With You")
+print("3. The Way You Make Me Feel")
+print("4. Remember the Time")
+
+answer = input("Your answer: ")
+
+if answer == "1":
+    print("Correct! Earth Song is the answer.\n")
+    score += 1
+else:
+    print("Incorrect. The correct answer is Earth Song.\n")
+
+
+# Question 4
+print('4. Which Michael Jackson album includes "Bad," "Smooth Criminal," and "Man in the Mirror"?')
+print("1. Dangerous")
+print("2. HIStory")
+print("3. Bad")
+print("4. Invincible")
+
+answer = input("Your answer: ")
+
+if answer == "3":
+    print("Correct! Bad is the answer.\n")
+    score += 1
+else:
+    print("Incorrect. The correct answer is Bad.\n")
+
+
+# Question 5
+print("5. What is the name of Michael Jackson's famous backward dance move?")
+print("1. The Robot")
+print("2. The Moonwalk")
+print("3. The Spin")
+print("4. The Glide")
+
+answer = input("Your answer: ")
+
+if answer == "2":
+    print("Correct! The Moonwalk is the answer.\n")
+    score += 1
+else:
+    print("Incorrect. The correct answer is the Moonwalk.\n")
+
+
+# Question 6
+print("6. Which group did Michael Jackson perform with before becoming a successful solo artist?")
+print("1. The Temptations")
+print("2. The Jackson 5")
+print("3. New Edition")
+print("4. The Supremes")
+
+answer = input("Your answer: ")
+
+if answer == "2":
+    print("Correct! The Jackson 5 is the answer.\n")
+    score += 1
+else:
+    print("Incorrect. The correct answer is the Jackson 5.\n")
+
+
+# Final results
+percentage = (score / total_questions) * 100
+
+print("===================================")
+print("              RESULTS")
+print("===================================")
+print(name + ", you got", score, "out of", total_questions, "correct!")
+print("Your score is", percentage, "%.")
+
+if percentage >= 90:
+    print("MJ SUPERFAN! You really know your Michael Jackson!")
+elif percentage >= 70:
+    print("DEDICATED MJ FAN! You definitely know your stuff!")
+elif percentage >= 50:
+    print("CASUAL MJ FAN! You know some of the classics.")
+else:
+    print("TIME FOR AN MJ MARATHON! You have some Michael Jackson to listen to!")
