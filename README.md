@@ -1,63 +1,175 @@
-# [Your Project Name Here]
-> A short one-line tagline for your quiz or questionnaire
+# [Michael Jackson Trivia Quiz]
+
+Think you know the King of Pop? Test your Michael Jackson Knowledge!
 
 ## Overview
-> **DELETE AND REPLACE ME:** Describe your program's focus, the type of
-> program it is (quiz, personality test, or recommendation tool), and the
-> final output a user will receive. Make it clear how user input and
-> conditional logic work together to produce that result.
->
-> Example: "This program quizzes users on Impressionist art. Based on
-> their answers, users earn points, and their final score determines
-> their level of knowledge on the topic."
 
-## Sample Questions and Responses
-> **DELETE AND REPLACE ME:** List at least five questions you'll ask the
-> user, along with the possible responses for each. Keep every question
-> closed-ended (numbered options or yes/no) so each response can be
-> handled directly by an `if`, `elif`, or `else` statement.
->
-> Example:
-> Which of the following painters is an Impressionist?
-> 1. Monet
-> 2. Warhol
-> 3. Rembrandt
+This program is a knowledge-based quiz about Michael Jackson, one of the most influential musicians and performers in music history. The quiz asked users six multiple-choice questions about Michael Jackson's music, albums, career, and performances. 
 
-## Variables
-> **DELETE AND REPLACE ME:** List the variables your program uses. For
-> each one, note what it stores and why you structured it that way,
-> especially for variables tracking results, explain whether a single
-> variable or multiple variables makes sense for your program's logic.
->
-> Example:
-> - `score` (int): tracks total quiz points. A single variable works here
->   since results are cumulative and only one final score matters.
-> - `decade_1920s_points`, `decade_1960s_points`, `decade_1980s_points`
->   (int): separate variables needed since multiple decades can tie for
->   highest score, one combined variable couldn't represent that.
-> - `user_choice` (str or int): stores the user's response to a question,
->   compared against expected options to decide which branch of the
->   conditional runs.
+The user enters an answer for each question, and the program uses conditional statements to determine whether the answer is correct.
+Users earn one point for everywhere correct answer. At the end of the quiz, the user's total score determines their final result.
 
-## Conditional Logic Outline
-> **DELETE AND REPLACE ME:** Outline every conditional statement in your
-> program, in the order they appear. For each one, describe it in plain
-> language (no code needed): which question/condition it relates to,
-> each branch (`if`/`elif`/`else`), the exact condition that triggers
-> each branch, the action(s) that happen in each branch, and note any
-> nested conditionals and why they're nested.
->
-> Example:
-> - **Conditional statement 1** — related to "Which of the following
->   painters is an Impressionist? 1-Monet 2-Warhol 3-Rembrandt"
->   - `if` response is 1 (Monet): display congratulatory message,
->     increment `score` by 1
->   - `else`: display incorrect message and explain the correct answer
->
-> - **Conditional statement 2** — reveals final results based on `score`
->   - `if` score is 3: display high-knowledge message
->   - `elif` score is 1 or 2: display some-knowledge message
->   - `else`: display message encouraging the user to learn more
+Sample Questions and Responses
+
+Question 1
+
+Which Michael Jackson album is the best-selling album of all time?
+
+Bad
+
+Thriller
+
+Dangerous
+
+Off the Wall
+
+Correct answer: 2 — Thriller
+
+Question 2
+
+Which Michael Jackson song is famous for its iconic music video featuring zombies and other horror elements?
+
+Beat It
+
+Billie Jean
+
+Thriller
+
+Smooth Criminal
+
+Correct answer: 3 — Thriller
+
+Question 3
+
+Which Michael Jackson song focuses heavily on environmental issues and damage to the planet?
+
+Earth Song
+
+Rock With You
+
+The Way You Make Me Feel
+
+Remember the Time
+
+Correct answer: 1 — Earth Song
+
+Question 4
+
+Which Michael Jackson album includes "Bad," "Smooth Criminal," and "Man in the Mirror"?
+
+Dangerous
+
+HIStory
+
+Bad
+
+Invincible
+
+Correct answer: 3 — Bad
+
+Question 5
+
+What is the name of the famous dance move Michael Jackson became known for in which he appears to walk backward while facing forward?
+
+The Robot
+
+The Moonwalk
+
+The Spin
+
+The Glide
+
+Correct answer: 2 — The Moonwalk
+
+Question 6
+
+Which group did Michael Jackson perform with before becoming a successful solo artist?
+
+The Temptations
+
+The Jackson 5
+
+New Edition
+
+The Supremes
+
+Correct answer: 2 — The Jackson 5
+
+Variables
+
+name (str): stores the user's name so the program can personalize the quiz.
+
+score (int): keeps track of how many questions the user answers correctly. One score variable works because all correct answers contribute to one final total.
+
+answer (str): stores the user's answer to each question so it can be compared with the correct answer.
+
+total_questions (int): stores the total number of questions in the quiz.
+
+percentage (float): calculates the user's final percentage based on their score.
+
+Conditional Logic Outline
+
+Conditional statement 1 — Question 1
+
+Related to the question asking which Michael Jackson album is the best-selling album of all time.
+
+if the response is 2: display a message saying the answer is correct and increase score by 1.
+
+else: display an incorrect message and tell the user that the correct answer is Thriller.
+
+Conditional statement 2 — Question 2
+
+Related to the question asking which song has the famous horror-themed music video.
+
+if the response is 3: display a correct message and increase score by 1.
+
+else: display an incorrect message and explain that the correct answer is Thriller.
+
+Conditional statement 3 — Question 3
+
+Related to the question about Michael Jackson's environmental song.
+
+if the response is 1: display a correct message and increase score by 1.
+
+else: display an incorrect message and explain that the correct answer is Earth Song.
+
+Conditional statement 4 — Question 4
+
+Related to the question asking which album contains "Bad," "Smooth Criminal," and "Man in the Mirror."
+
+if the response is 3: display a correct message and increase score by 1.
+
+else: display an incorrect message and explain that the correct answer is Bad.
+
+Conditional statement 5 — Question 5
+
+Related to the question asking about Michael Jackson's famous backward dance move.
+
+if the response is 2: display a correct message and increase score by 1.
+
+else: display an incorrect message and explain that the correct answer is the Moonwalk.
+
+Conditional statement 6 — Question 6
+
+Related to the question asking which group Michael Jackson performed with before his solo career.
+
+if the response is 2: display a correct message and increase score by 1.
+
+else: display an incorrect message and explain that the correct answer is the Jackson 5.
+
+Conditional statement 7 — Final result
+
+After all six questions, the program calculates the user's percentage and determines their final result.
+
+if the percentage is 90% or higher: display "MJ Superfan!"
+
+elif the percentage is 70% or higher: display "Dedicated MJ Fan!"
+
+elif the percentage is 50% or higher: display "Casual MJ Fan!"
+
+else: display "Time for an MJ Marathon!"
+
+The final score and percentage are displayed to the user.
 
 ## How to Run
 1. Clone this repo
