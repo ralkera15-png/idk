@@ -176,4 +176,4 @@ The final score and percentage are displayed to the user.
 2. Run `python3 main.py` or `python main.py`
 
 ## Demo Video
-[DELETE AND REPLACE ME: link to your 5-minute explanation video]
+https://www.dropbox.com/scl/fi/xueglh50pkgrx08mf8zc5/Video-Sep-20-2026-9-26-24-PM.mov?rlkey=jkfg4td8042o9blri9lfjxufh&st=3atgwsp4&dl=0
